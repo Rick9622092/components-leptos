@@ -1,0 +1,28 @@
+[package]
+name = "components-leptos"
+version = "0.0.1"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+leptos = {version = "0.1.0-beta"}
+leptos_router = {version = "0.1.0-beta"}
+
+
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+
+[dev-dependencies]
+wasm-bindgen-test = "0.3.0"
+
+
+[dependencies.web-sys]
+version = "0.3"
+features = [
+"Selection"
+]
+
